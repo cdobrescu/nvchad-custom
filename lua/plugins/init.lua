@@ -5,6 +5,11 @@ return {
     opts = require "configs.conform",
   },
 
+  {
+    "mfussenegger/nvim-jdtls",
+    ft = "java"
+  },
+
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
