@@ -5,6 +5,11 @@ return {
     opts = require "configs.conform",
   },
 
+  {
+    "mfussenegger/nvim-jdtls",
+    ft = "java"
+  },
+
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
@@ -13,16 +18,18 @@ return {
     end,
   },
 
-  -- test new blink
-  -- { import = "nvchad.blink.lazyspec" },
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+    lazy = false,
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc",
+        "html", "css", "typescript", "cpp", "python",
+        "java", "rust", "markdown"
+  		},
+      highlight = {
+        enabled = true
+      }
+  	},
+  },
 }

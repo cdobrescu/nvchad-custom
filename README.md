@@ -1,9 +1,8 @@
-**This repo is supposed to used as config by NvChad users!**
+# NvChad - NeoVIM custom configuration
+This configuration is based on the [NvChad V2.5 Starter template](https://github.com/NvChad/starter)
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+## Getting started
 
-# Credits
-
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+```
+git clone git@github.com:cdobrescu/nvchad-custom.git ~/.config/nvim
+```
